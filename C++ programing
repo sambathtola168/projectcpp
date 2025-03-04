@@ -1,1 +1,32 @@
+#include<iostream>
+using namespace std;
+class person{
+    private:
+    int id;
+    string name,salary,gender;
+    public:
+ void input()
+{
+  
+    cout<<"Enter id   :"; cin>>id;
+    cout<<"Enetr name :"; cin>>name;
+    cout<<"Enter Gender:"; cin>>gender;
+    cout<<"Enter salary:" ;cin>>salary;
+}
+void output()
+{
+    cout<<"Id      :" << id <<endl;
+    cout<<"Name    :"<< name<<endl;
+    cout<<"Gender  :"<<gender<<endl;
+    cout<<"Salary  :"<<salary<<endl;
+}
+};
 
+int main()
+{
+    person per;
+    per.input();
+    per.output();
+    return 0;
+}
+// class object
