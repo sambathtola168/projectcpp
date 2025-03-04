@@ -1,3 +1,4 @@
+
 #include<iostream>
 using namespace std;
 class person{
@@ -29,4 +30,48 @@ int main()
     per.output();
     return 0;
 }
+//object
+
+include<iostream>
+#include<iomanip>
+using namespace std;
+class imployee{
+    private:
+    int id;
+    string title;
+    string subject;
+    string auther;
+    public :
+    Library()
+    {
+        id = 0;
+        title = "NULL";
+        subject="NuLL";
+        auther ="NULL";
+    }
+    Void Add()
+    {
+        cout <<"Enetr ID :"; cin>>id;
+        cout<<"ENter subject :";cin>>subject;
+        cout "Enter auther  :"; cin>>auther;
+
+    }
+    void Display(){.    
+    int n;
+    cout<<"Enetr number of Library :"; cin>>n;
+    lib = "Library is null"<<end;
+    return 0;
+}
+else
+{
+    for(int i = 0; i <n; i++)
+    {
+        (lib+i)->Add();
+    }
+
+}
+return 0;
+//pointer
+
+
 // class object
