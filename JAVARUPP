@@ -1,1 +1,36 @@
+/*package listdelete;
+imoport java.util.ArrayList;
+inport java.util.List;
+public class Student {
+    int id;
+    String name;
+    int age;
+    public Student(intid,String name,int age){
+        this.id=id;
+        this.name=name;
+        this.age=age;
+    }
+    public Student(){ return name;}
+    public void setAge(int age){this.age=age;}
+    public String toString(){
+
+    }
+}
+ public class ListDeleteDemo {
+    public static void DeleteByName(List<Student>Student,String,String name){
+        student.removeif(stu -> stu.getName().equalsIgnorecase(name)));
+
+    }
+    public static void main(String[] args) {
+        ArrayList<Student><Student =new ArrayList();
+        Students.add(new Student(3,"KIM HENG",20));
+        Students.add(new Student(1,"song Heng,20"));
+        System.out s:students)
+        System.out.println(s);
+deleteByName(students,"KIM HENG");
+System.out.println(\"Nout Afther Delete :");
+student.forEach(System.out::println);
+    }
+ }
+
 
