@@ -32,5 +32,68 @@ System.out.println(\"Nout Afther Delete :");
 student.forEach(System.out::println);
     }
  }
+///newcode
+package Listdeleteara;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+    int id;
+    String name;
+    int age;
+
+    // Constructor
+    public Student(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    // Default constructor
+    public Student() {}
+
+    // Getter and Setter methods
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Overriding toString() for meaningful output
+    @Override
+    public String toString() {
+        return "Student{id=" + id + ", name='" + name + "', age=" + age + "}";
+    }
+}
+
+class ListDeleteDemo {
+
+    // Method to delete a student by name
+    public static void deleteByName(List<Student> students, String name) {
+        students.removeIf(stu -> stu.getName().equalsIgnoreCase(name));
+    }
+
+    public static void main(String[] args) {
+        // Create a list of students
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(new Student(3, "KIM HENG", 20));
+        students.add(new Student(1, "Song Heng", 20));
+
+        // Display the list of students before deletion
+        System.out.println("Before Deletion:");
+        students.forEach(System.out::println);
+
+        // Delete student by name
+        deleteByName(students, "KIM HENG");
+
+        // Display the list after deletion
+        System.out.println("\nAfter Deletion:");
+        students.forEach(System.out::println);
+    }
+}
+
+
 
 
