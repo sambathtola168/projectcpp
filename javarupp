@@ -23,9 +23,7 @@ static void input(float arr[],int n){
         for(int i=0;i<n;i++){
             System.out.println("input number "+(i+1)+" : ");
           arr[i]=sc.nextFloat();
-        }
-    }
-    
+        }   
     static void output(float arr[],int n){
         for(int i=0;i<n;i++){
             System.out.print(arr[i]+" ");
@@ -46,4 +44,44 @@ static void input(float arr[],int n){
      output(arr,n);
       
   }
+}
+//coderror
+package exceptionsl;
+import java.util.List;
+import java.util.Scanner;
+import.util.Scanner;
+public class Student {
+    private String name;
+    private String sex;
+    public Student(String name,String sex) {
+        if9!sex.equals("M") && ! sex.equals("F)){
+            throw. new IllegalChannelGroupException("Invalid sex value !");
+    }
+    this.name=name;
+    this.sex =sex;
+    thi
+}
+public String getsex(){sex;}
+public String toSting ( {
+    return "Student" {
+        name '" + "', sex = '" + sex" + } ";
+    }
+}
+public class  StudnrtDemoo{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        try {
+            System.out.print("Enter Student Name :");
+            String name = sc.nextLine();
+            System.out.print("Enetr sex (M,F):");
+            String sex = sc.nex( Student(name, sex);
+            System.out.ptint("Student created :" +st);
+        }
+        catch("IllegalArumentExcetion e"){
+                System.out.println("Erro : + e.getMessage(();
+        }
+        finally{
+            sc.close();
+        }
+    }
 }
