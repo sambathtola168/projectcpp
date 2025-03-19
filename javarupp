@@ -31,6 +31,33 @@ static void input(float arr[],int n){
         }
     }
 
+
+
+
+
+class arrayy Obj 
+public class Mainn {
+    int v;
+
+    // Default constructor
+    public Mainn() {
+        v = 5; // Initialize 'v' to 5
+    }
+
+    // Constructor with one parameter
+    public Mainn(int value) {
+        v = value; // Initialize 'v' with the passed value
+    }
+
+    public static void main(String[] args) {
+        Mainn myOjb1 = new Mainn(); // Calls the default constructor
+        Mainn myOjb2 = new Mainn(10); // Calls the constructor with an integer parameter
+
+        System.out.println(myOjb1.v); // Prints '5'
+        System.out.println(myOjb2.v); // Prints '10'
+    }
+}
+
     
   public static void main(String[] args) {
       int n;
